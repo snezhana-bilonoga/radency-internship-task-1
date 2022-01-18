@@ -22,7 +22,7 @@ export default class NotesTable {
             <tbody></tbody>
         </table>
         `;
-        this.root.insertAdjacentHTML('beforeend', this.innerHTML);
+        this.root.insertAdjacentHTML("beforeend", this.innerHTML);
     }
 
     _createRowHTML(id, name, created, category, content, dates) {
@@ -53,7 +53,7 @@ export default class NotesTable {
         }
 
         notesContainer.querySelectorAll("tr[noteid]").forEach(noteItem => {
-            const noteId = +noteItem.getAttribute('noteid');
+            const noteId = +noteItem.getAttribute("noteid");
 
             noteItem.querySelector(".edit").addEventListener("click", () => {
                 this.onNoteSelect(noteId);

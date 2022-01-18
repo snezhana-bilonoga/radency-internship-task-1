@@ -13,7 +13,7 @@ export default class CategoriesTable {
             <tbody></tbody>
         </table>
         `;
-        this.root.insertAdjacentHTML('beforeend', this.innerHTML);
+        this.root.insertAdjacentHTML("beforeend", this.innerHTML);
     }
 
     _createCategoryRowHTML(category, activeCounter, archivedCounter) {
